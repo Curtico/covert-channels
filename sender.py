@@ -1,8 +1,8 @@
 from scapy.all import *
 from sys import argv
 
-if len(argv) == 1:
-    print("Usage: python3 sender.py <interface>")
+if len(argv) < 3:
+    print("Usage: python3 sender.py <interface> <message>")
     quit()
 
 conf.iface=argv[1]
